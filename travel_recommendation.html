@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+    <nav>
+        <div class="navbar">
+            <div id="intro">
+                <img src="./pics/plane.png", style="vertical-align:middle; width:90px;"/>
+                <a>TravelBloom</a>
+            </div>
+            <div id="nav-tags">
+                <a class="topmenu" href="./travel_recommendation.html">Home</a>
+                <a class="topmenu" href="./about.html">About Us</a>
+                <a class="topmenu" href="./contact.html">Contact Us</a>
+            </div>
+            <form id="recForm">
+                <input type="search" placeholder="Search.." name="search" class="search" id="search">
+                <button type="submit" class="button" onclick="showRecDetails()">Submit</button>
+                <button type="clear" class="button" name="clear" class="clear" id="clear" onclick=clearRecDetails()>Clear</button>
+            </form>
+        </div>
+    </nav>
+
+<body>
+    <script src="./travel_recommendation.js"></script>
+    <div class="container">
+        <img src="./pics/spk.jpeg" alt="Spk" style="width:100%; opacity: .5;">
+        <div class="bottom-left">
+            <img src="./pics/facebook.png" alt="fb" style="padding: 5px; width: 35px;">
+            <img src="./pics/tiktok.png" alt="tt" style="padding: 5px; width: 35px;">
+            <img src="./pics/whatsapp.png" alt="wa" style="padding: 5px; width: 35px;">
+            <img src="./pics/youtube.png" alt="yt" style="padding: 5px; width: 35px;">
+        </div>
+        <div class="top-left">
+            <h5>DISCOVER A DREAM DESTINATION</h5>
+            <p>With TravelBloom, you can see any sight and breathe any air if you can pay! Join us for your next adventure today</p>
+        </div>
+      </div>
+      <div class="centered">
+        <div class="all_loc">
+            <h5>OUR RECS</h5>
+        <div class="location">
+            <img id="place1_img" src="./pics/person2.png"/>
+            <h6 id="place1_name"> Search Above</h6>
+            <p id="place1_des">To visit somewhere stunning!</p>
+            <label type="submit" class="label">VISIT</label>
+        </div>  
+        <div class="location">
+            <img id="place2_img" src="./pics/person2.png"/>
+            <h6 id="place2_name">Search Above</h6>
+            <p id="place2_des">To visit somewhere stunning!</p>
+            <label type="submit" class="label">VISIT</label>
+        </div> 
+        <div id="weatherInfo"></div>
+</body>
+
+</html>

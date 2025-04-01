@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+    <nav>
+        <div class="navbar">
+            <div id="intro">
+                <img src="./pics/plane.png", style="vertical-align:middle; width:90px;"/>
+                <a>TravelBloom</a>
+            </div>
+            <div id="nav-tags">
+                <a class="topmenu" href="./travel_recommendation.html">Home</a>
+                <a class="topmenu" href="./about.html">About Us</a>
+                <a class="topmenu" href="./contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+<body>
+    <script src="./travel_recommendation.js"></script>
+    <div class="container">
+        <img src="./pics/spk.jpeg" alt="Spk" style="width:100%; opacity: .5;">
+        <div class="bottom-left">
+            <img src="./pics/facebook.png" alt="fb" style="padding: 5px; width: 35px;">
+            <img src="./pics/tiktok.png" alt="tt" style="padding: 5px; width: 35px;">
+            <img src="./pics/whatsapp.png" alt="wa" style="padding: 5px; width: 35px;">
+            <img src="./pics/youtube.png" alt="yt" style="padding: 5px; width: 35px;">
+        </div>
+        <div class="bottom-right">
+                  <!-- Recommendation Form -->
+            <section id="contact">
+                <fieldset>
+                    <legend class="introduction">Leave a Recommendation</legend>          
+                    <input type="text" placeholder="Name"> <br/>
+                    <input type="text" placeholder="Email"> <br/>
+                    <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+                    <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                </fieldset>
+            </section>
+        </div>
+          
+        <div class="centered">
+            <h5>CONTACT US</h5>
+        </div>
+        
+</body>
+</html>
